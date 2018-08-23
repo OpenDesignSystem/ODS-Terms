@@ -1,0 +1,668 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://opendesignsystem.org/documents/ods-terms/"
+     xml:base="http://opendesignsystem.org/documents/ods-terms/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="http://opendesignsystem.org/documents/ods-terms/">
+        <dc:contributor>Open Design System ontology is supported by members of OpenDesignSystem.org (http://opendesignsystem.org)
+
+Murugesan Ganesan</dc:contributor>
+        <owl:versionInfo>V 1.0, Release 2018 August 25</owl:versionInfo>
+        <dc:license>http://creativecommons.org/licenses/by/3.0/</dc:license>
+        <dc:rights>The Open Design System ontology is available under the Creative Commons Attribution 3.0 Unported license; see http://creativecommons.org/licenses/by/3.0/. In short, you are free to copy, distribute and transmit the work; to remix/adapt the work (e.g. to import the ontology and create specializations of its elements), as long as you attribute the work in the manner specified by the author or licensor (but not in any way that suggests that they endorse you or your use of the work). Proper Attribution: Simply include the statement &quot;This work is based on the Open Design System ontology, developed by  OpenDesignSystem.org by Samir Dash&quot; and link back to http://purl.org/ods/</dc:rights>
+        <dc:title>The Vocabulary for the Semantic Open Design System</dc:title>
+        <foaf:homepage>http://purl.org/ods/</foaf:homepage>
+        <rdfs:comment>The Open Design System ontology provides the vocabulary for making design systems semantic and machine-readable.   
+
+For more information, see http://purl.org/ods/</rdfs:comment>
+        <dc:subject>Design, Design System, User Interface Design, User Experience, Pattern Library, Semantic Design System, Sematic Design, Atomic Design, Style Guide, Brand System, Web, UI, Application Interface, User Interface, API, Design Tools, Linked Data, Semantic System, RDFa, Microdata, Ontology, OWL, RDF</dc:subject>
+        <dc:creator>Samir Dash (at OpenDesignSystem.org)</dc:creator>
+        <rdfs:label>Open Design System</rdfs:label>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/license"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/rights -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/rights"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/subject -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/subject"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/homepage -->
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/homepage"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://opendesignsystem.org/documents/ods-terms/hasPropertyOf -->
+
+    <owl:ObjectProperty rdf:about="http://opendesignsystem.org/documents/ods-terms/hasPropertyOf"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://opendesignsystem.org/documents/ods-terms/Appearance -->
+
+    <owl:Class rdf:about="http://opendesignsystem.org/documents/ods-terms/Appearance">
+        <rdfs:subClassOf rdf:resource="http://opendesignsystem.org/documents/ods-terms/Token_Types"/>
+    </owl:Class>
+    
+
+
+    <!-- http://opendesignsystem.org/documents/ods-terms/Atom -->
+
+    <owl:Class rdf:about="http://opendesignsystem.org/documents/ods-terms/Atom">
+        <rdfs:subClassOf rdf:resource="http://opendesignsystem.org/documents/ods-terms/Open_Design_System_Framework"/>
+    </owl:Class>
+    
+
+
+    <!-- http://opendesignsystem.org/documents/ods-terms/Behaviour -->
+
+    <owl:Class rdf:about="http://opendesignsystem.org/documents/ods-terms/Behaviour">
+        <rdfs:subClassOf rdf:resource="http://opendesignsystem.org/documents/ods-terms/Token_Types"/>
+    </owl:Class>
+    
+
+
+    <!-- http://opendesignsystem.org/documents/ods-terms/Design_Element_Pattern -->
+
+    <owl:Class rdf:about="http://opendesignsystem.org/documents/ods-terms/Design_Element_Pattern">
+        <rdfs:comment>A pattern is a discernible regularity in the design</rdfs:comment>
+        <rdfs:label>Design Element Pattern</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://opendesignsystem.org/documents/ods-terms/Design_System -->
+
+    <owl:Class rdf:about="http://opendesignsystem.org/documents/ods-terms/Design_System">
+        <rdfs:subClassOf rdf:resource="http://opendesignsystem.org/documents/ods-terms/Information_System"/>
+        <rdfs:comment>Design System is a collection of design language consisting of  signs, symbols, patterns, definitions of design elements (applicable to both digital and non-digital domains) to accelerate design process and reduce design inconsistancies across entities (e.g. applications, products, services ) that are built through some design process.</rdfs:comment>
+        <rdfs:label>Design System</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://opendesignsystem.org/documents/ods-terms/Design_System_Format -->
+
+    <owl:Class rdf:about="http://opendesignsystem.org/documents/ods-terms/Design_System_Format">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://opendesignsystem.org/documents/ods-terms/Design_System"/>
+                    <rdf:Description rdf:about="http://opendesignsystem.org/documents/ods-terms/Publication_Format"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://opendesignsystem.org/documents/ods-terms/Publication_Format"/>
+        <rdfs:comment>The format in which the design system is set out for definition and publication and delivery.</rdfs:comment>
+        <rdfs:label>Design System Format</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://opendesignsystem.org/documents/ods-terms/Digital_Design_System_Format -->
+
+    <owl:Class rdf:about="http://opendesignsystem.org/documents/ods-terms/Digital_Design_System_Format">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://opendesignsystem.org/documents/ods-terms/Design_System_Format"/>
+                    <rdf:Description rdf:about="http://opendesignsystem.org/documents/ods-terms/Digital_System"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://opendesignsystem.org/documents/ods-terms/Open_Design_System_Format"/>
+        <owl:disjointWith rdf:resource="http://opendesignsystem.org/documents/ods-terms/Non-Digital_Design_System_Format"/>
+        <rdfs:comment>This type of design systems are defined and published in digital form. Also in order to be semantic, these must have implemented an approach for information portability across machine, especislly being defined via some ontology framework.</rdfs:comment>
+        <rdfs:label>Digital Design System Format</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://opendesignsystem.org/documents/ods-terms/Digital_System -->
+
+    <owl:Class rdf:about="http://opendesignsystem.org/documents/ods-terms/Digital_System">
+        <rdfs:subClassOf rdf:resource="http://opendesignsystem.org/documents/ods-terms/Information_System"/>
+        <owl:disjointWith rdf:resource="http://opendesignsystem.org/documents/ods-terms/Non-Digital_System"/>
+        <rdfs:comment>Digital System is a information system that uses binary system. Where the data can assume only two possible values i.e. zero and one.</rdfs:comment>
+        <rdfs:label>Digital System</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://opendesignsystem.org/documents/ods-terms/Format -->
+
+    <owl:Class rdf:about="http://opendesignsystem.org/documents/ods-terms/Format">
+        <rdfs:comment>In the something is arranged or set out.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://opendesignsystem.org/documents/ods-terms/Information_System -->
+
+    <owl:Class rdf:about="http://opendesignsystem.org/documents/ods-terms/Information_System">
+        <rdfs:subClassOf rdf:resource="http://opendesignsystem.org/documents/ods-terms/System"/>
+        <rdfs:comment>Information System is an organized system for collection, organization, storgae and communication of information.</rdfs:comment>
+        <rdfs:label>Information System</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://opendesignsystem.org/documents/ods-terms/Interactions -->
+
+    <owl:Class rdf:about="http://opendesignsystem.org/documents/ods-terms/Interactions">
+        <rdfs:subClassOf rdf:resource="http://opendesignsystem.org/documents/ods-terms/&apos;Open_Design_System_Framework_Digital_Visual_UI&apos;"/>
+    </owl:Class>
+    
+
+
+    <!-- http://opendesignsystem.org/documents/ods-terms/Mixture -->
+
+    <owl:Class rdf:about="http://opendesignsystem.org/documents/ods-terms/Mixture">
+        <rdfs:subClassOf rdf:resource="http://opendesignsystem.org/documents/ods-terms/Open_Design_System_Framework"/>
+    </owl:Class>
+    
+
+
+    <!-- http://opendesignsystem.org/documents/ods-terms/Molecular_Compound -->
+
+    <owl:Class rdf:about="http://opendesignsystem.org/documents/ods-terms/Molecular_Compound">
+        <rdfs:subClassOf rdf:resource="http://opendesignsystem.org/documents/ods-terms/Molecule"/>
+        <owl:disjointWith rdf:resource="http://opendesignsystem.org/documents/ods-terms/Molecular_Element"/>
+        <rdfs:label>Molecular Compound</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://opendesignsystem.org/documents/ods-terms/Molecular_Coumpound_Isotope -->
+
+    <owl:Class rdf:about="http://opendesignsystem.org/documents/ods-terms/Molecular_Coumpound_Isotope">
+        <rdfs:subClassOf rdf:resource="http://opendesignsystem.org/documents/ods-terms/Molecular_Isotope"/>
+        <owl:disjointWith rdf:resource="http://opendesignsystem.org/documents/ods-terms/Molecular_Element_Isotope"/>
+        <rdfs:label>Molecular Compound</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://opendesignsystem.org/documents/ods-terms/Molecular_Element -->
+
+    <owl:Class rdf:about="http://opendesignsystem.org/documents/ods-terms/Molecular_Element">
+        <rdfs:subClassOf rdf:resource="http://opendesignsystem.org/documents/ods-terms/Molecule"/>
+        <rdfs:label>Molecular Element</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://opendesignsystem.org/documents/ods-terms/Molecular_Element_Isotope -->
+
+    <owl:Class rdf:about="http://opendesignsystem.org/documents/ods-terms/Molecular_Element_Isotope">
+        <rdfs:subClassOf rdf:resource="http://opendesignsystem.org/documents/ods-terms/Molecular_Isotope"/>
+        <rdfs:label>Molecular Element</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://opendesignsystem.org/documents/ods-terms/Molecular_Isotope -->
+
+    <owl:Class rdf:about="http://opendesignsystem.org/documents/ods-terms/Molecular_Isotope">
+        <rdfs:subClassOf rdf:resource="http://opendesignsystem.org/documents/ods-terms/Open_Design_System_Framework"/>
+        <rdfs:label>Molecular Isotope</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://opendesignsystem.org/documents/ods-terms/Molecular_Mixture -->
+
+    <owl:Class rdf:about="http://opendesignsystem.org/documents/ods-terms/Molecular_Mixture">
+        <rdfs:subClassOf rdf:resource="http://opendesignsystem.org/documents/ods-terms/Open_Design_System_Framework"/>
+        <rdfs:label>Molecular Mixture</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://opendesignsystem.org/documents/ods-terms/Molecule -->
+
+    <owl:Class rdf:about="http://opendesignsystem.org/documents/ods-terms/Molecule">
+        <rdfs:subClassOf rdf:resource="http://opendesignsystem.org/documents/ods-terms/Open_Design_System_Framework"/>
+    </owl:Class>
+    
+
+
+    <!-- http://opendesignsystem.org/documents/ods-terms/Non-Digital_Design_System_Format -->
+
+    <owl:Class rdf:about="http://opendesignsystem.org/documents/ods-terms/Non-Digital_Design_System_Format">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://opendesignsystem.org/documents/ods-terms/Design_System_Format"/>
+                    <rdf:Description rdf:about="http://opendesignsystem.org/documents/ods-terms/Non-Digital_System"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://opendesignsystem.org/documents/ods-terms/Open_Design_System_Format"/>
+        <rdfs:comment>This type of design systems are published in a non-digital format, for example - printed handouts, printed booklets, handwritten cheatsheets etc. This type of design system must have some additional information on them that would help the data to be consumed by a system or a machine in order to be semantic and open e.g. a barcode, QR code or a digital metadata link that can be scanned via OCR r any other technology.</rdfs:comment>
+        <rdfs:label>Non-Digital Design System Format</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://opendesignsystem.org/documents/ods-terms/Non-Digital_System -->
+
+    <owl:Class rdf:about="http://opendesignsystem.org/documents/ods-terms/Non-Digital_System">
+        <rdfs:subClassOf rdf:resource="http://opendesignsystem.org/documents/ods-terms/Information_System"/>
+        <rdfs:comment>Non-Digital System can be any system including physical system or analogue systems, but Digital System.</rdfs:comment>
+        <rdfs:label>Non-Digital System</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://opendesignsystem.org/documents/ods-terms/Open_Design_System -->
+
+    <owl:Class rdf:about="http://opendesignsystem.org/documents/ods-terms/Open_Design_System">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://opendesignsystem.org/documents/ods-terms/Design_System"/>
+                    <rdf:Description rdf:about="http://opendesignsystem.org/documents/ods-terms/Open_System"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment rdf:resource="http://purl.org/ods/terms/"/>
+        <rdfs:comment>Open Design System that is a Design System that is sharable across machines and at the same time is portable. It is a collection of signs, symbols, patterns, definitions of design elements that can help designing any other system or application (applicable to both digital non-digital domains).</rdfs:comment>
+        <rdfs:label>Open Design System</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://opendesignsystem.org/documents/ods-terms/Open_Design_System_Format -->
+
+    <owl:Class rdf:about="http://opendesignsystem.org/documents/ods-terms/Open_Design_System_Format">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://opendesignsystem.org/documents/ods-terms/Design_System_Format"/>
+                    <rdf:Description rdf:about="http://opendesignsystem.org/documents/ods-terms/Open_Design_System"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://opendesignsystem.org/documents/ods-terms/Design_System_Format"/>
+        <rdfs:comment>The publishing format in which the open design system specs are set out for publication and delivery.</rdfs:comment>
+        <rdfs:label>Open Design System Format</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://opendesignsystem.org/documents/ods-terms/Open_Design_System_Framework -->
+
+    <owl:Class rdf:about="http://opendesignsystem.org/documents/ods-terms/Open_Design_System_Framework">
+        <rdfs:subClassOf rdf:resource="http://opendesignsystem.org/documents/ods-terms/&apos;Open_Design_System_Framework_Global&apos;"/>
+        <rdfs:comment>This contains the basic framework vocabulary and definitions that can work across domains. This defines the basic building blocks based on the molecular nomenaclature used in chemistry which can be extended and mapped to differnt design system. For example in Software and Web UI design System case -- the smallest entites are  &quot;Tokens&quot; that are equivalent to Subatomic particles, &quot;Primitives&quot; that are Atomic level, then &quot;Patterns&quot; at the Molecule and molecular Compound level; the variations in patterns are defined in analogy with Isotopes, and later the templates as the Molecular Mixture and the Pages as the Mixture level.</rdfs:comment>
+        <rdfs:label>Open Design System Framework Global</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://opendesignsystem.org/documents/ods-terms/Open_Design_System_Framework_Digital_Auditory_UI -->
+
+    <owl:Class rdf:about="http://opendesignsystem.org/documents/ods-terms/Open_Design_System_Framework_Digital_Auditory_UI">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://opendesignsystem.org/documents/ods-terms/hasPropertyOf"/>
+                <owl:someValuesFrom rdf:resource="http://opendesignsystem.org/documents/ods-terms/Open_Design_System_Framework"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://opendesignsystem.org/documents/ods-terms/&apos;Open_Design_System_Framework_Global&apos;"/>
+        <rdfs:comment>This uses basic bloacks defined in the &quot;Open Design System Framework Global&quot; to create a vocabulary and mapping for the Digital Auditory or Voice based User Interface domian.</rdfs:comment>
+        <rdfs:label>Open Design System Framework Digital Auditory UI</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://opendesignsystem.org/documents/ods-terms/Open_System -->
+
+    <owl:Class rdf:about="http://opendesignsystem.org/documents/ods-terms/Open_System">
+        <rdfs:subClassOf rdf:resource="http://opendesignsystem.org/documents/ods-terms/System"/>
+        <rdfs:comment>Open System that is a system that has external interactions. Such interactions can take a form of information, energy, material or assets transfers into or out of the system boundary depending on the discipline that defines the concept of the system.</rdfs:comment>
+        <rdfs:label>Open System</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://opendesignsystem.org/documents/ods-terms/Page -->
+
+    <owl:Class rdf:about="http://opendesignsystem.org/documents/ods-terms/Page">
+        <rdfs:subClassOf rdf:resource="http://opendesignsystem.org/documents/ods-terms/&apos;Open_Design_System_Framework_Digital_Visual_UI&apos;"/>
+        <rdfs:comment>Smallest entity of the Open Design System Framework</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://opendesignsystem.org/documents/ods-terms/Pallette -->
+
+    <owl:Class rdf:about="http://opendesignsystem.org/documents/ods-terms/Pallette">
+        <rdfs:subClassOf rdf:resource="http://opendesignsystem.org/documents/ods-terms/&apos;Open_Design_System_Framework_Digital_Visual_UI&apos;"/>
+    </owl:Class>
+    
+
+
+    <!-- http://opendesignsystem.org/documents/ods-terms/Pattern -->
+
+    <owl:Class rdf:about="http://opendesignsystem.org/documents/ods-terms/Pattern">
+        <rdfs:subClassOf rdf:resource="http://opendesignsystem.org/documents/ods-terms/&apos;Open_Design_System_Framework_Digital_Visual_UI&apos;"/>
+        <rdfs:comment>Smallest entity of the Open Design System Framework</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://opendesignsystem.org/documents/ods-terms/Placement -->
+
+    <owl:Class rdf:about="http://opendesignsystem.org/documents/ods-terms/Placement">
+        <rdfs:subClassOf rdf:resource="http://opendesignsystem.org/documents/ods-terms/&apos;Open_Design_System_Framework_Digital_Visual_UI&apos;"/>
+    </owl:Class>
+    
+
+
+    <!-- http://opendesignsystem.org/documents/ods-terms/Primitive -->
+
+    <owl:Class rdf:about="http://opendesignsystem.org/documents/ods-terms/Primitive">
+        <rdfs:subClassOf rdf:resource="http://opendesignsystem.org/documents/ods-terms/&apos;Open_Design_System_Framework_Digital_Visual_UI&apos;"/>
+        <rdfs:comment>Smallest entity of the Open Design System Framework</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://opendesignsystem.org/documents/ods-terms/Publication_Format -->
+
+    <owl:Class rdf:about="http://opendesignsystem.org/documents/ods-terms/Publication_Format">
+        <rdfs:subClassOf rdf:resource="http://opendesignsystem.org/documents/ods-terms/Format"/>
+        <rdfs:comment>The form in which the content is arranged or set out in publication.</rdfs:comment>
+        <rdfs:label>Publication Format</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://opendesignsystem.org/documents/ods-terms/Semantic_Design_System -->
+
+    <owl:Class rdf:about="http://opendesignsystem.org/documents/ods-terms/Semantic_Design_System">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://opendesignsystem.org/documents/ods-terms/Design_System"/>
+                    <rdf:Description rdf:about="http://opendesignsystem.org/documents/ods-terms/&apos;Semantic_System&apos;"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://opendesignsystem.org/documents/ods-terms/&apos;Semantic_System&apos;"/>
+        <rdfs:comment>Open Design System that is a Design System that is sharable across machines and at the same time is portable. It is a collection of signs, symbols, patterns, definitions of design elements that can help designing any other system or application (both digital non-digital).</rdfs:comment>
+        <rdfs:label>Semantic Design System</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://opendesignsystem.org/documents/ods-terms/Semantics -->
+
+    <owl:Class rdf:about="http://opendesignsystem.org/documents/ods-terms/Semantics">
+        <rdfs:comment>The branch of linguistic and logic concerned with meaning.</rdfs:comment>
+        <rdfs:label>Semantics</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://opendesignsystem.org/documents/ods-terms/State -->
+
+    <owl:Class rdf:about="http://opendesignsystem.org/documents/ods-terms/State">
+        <rdfs:subClassOf rdf:resource="http://opendesignsystem.org/documents/ods-terms/Token_Types"/>
+    </owl:Class>
+    
+
+
+    <!-- http://opendesignsystem.org/documents/ods-terms/Sub-Atomic_Element -->
+
+    <owl:Class rdf:about="http://opendesignsystem.org/documents/ods-terms/Sub-Atomic_Element">
+        <rdfs:subClassOf rdf:resource="http://opendesignsystem.org/documents/ods-terms/Open_Design_System_Framework"/>
+        <rdfs:label>Sub-Atomic Element</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://opendesignsystem.org/documents/ods-terms/Sub-Atomic_Type -->
+
+    <owl:Class rdf:about="http://opendesignsystem.org/documents/ods-terms/Sub-Atomic_Type">
+        <rdfs:subClassOf rdf:resource="http://opendesignsystem.org/documents/ods-terms/Sub-Atomic_Element"/>
+        <rdfs:label>Sub-Atomic Type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://opendesignsystem.org/documents/ods-terms/System -->
+
+    <owl:Class rdf:about="http://opendesignsystem.org/documents/ods-terms/System">
+        <rdfs:comment>System is a collection of things or entities - regularly interacting or interdependent group of units forming an integrated whole.</rdfs:comment>
+        <rdfs:label>System</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://opendesignsystem.org/documents/ods-terms/Template -->
+
+    <owl:Class rdf:about="http://opendesignsystem.org/documents/ods-terms/Template">
+        <rdfs:subClassOf rdf:resource="http://opendesignsystem.org/documents/ods-terms/&apos;Open_Design_System_Framework_Digital_Visual_UI&apos;"/>
+        <rdfs:comment>Smallest entity of the Open Design System Framework</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://opendesignsystem.org/documents/ods-terms/Token -->
+
+    <owl:Class rdf:about="http://opendesignsystem.org/documents/ods-terms/Token">
+        <rdfs:subClassOf rdf:resource="http://opendesignsystem.org/documents/ods-terms/&apos;Open_Design_System_Framework_Digital_Visual_UI&apos;"/>
+        <rdfs:comment>Smallest entity of the Open Design System Framework</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://opendesignsystem.org/documents/ods-terms/Token_Types -->
+
+    <owl:Class rdf:about="http://opendesignsystem.org/documents/ods-terms/Token_Types">
+        <rdfs:subClassOf rdf:resource="http://opendesignsystem.org/documents/ods-terms/Token"/>
+        <rdfs:label>Token Types</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://opendesignsystem.org/documents/ods-terms/Typography -->
+
+    <owl:Class rdf:about="http://opendesignsystem.org/documents/ods-terms/Typography">
+        <rdfs:subClassOf rdf:resource="http://opendesignsystem.org/documents/ods-terms/&apos;Open_Design_System_Framework_Digital_Visual_UI&apos;"/>
+    </owl:Class>
+    
+
+
+    <!-- http://opendesignsystem.org/documents/ods-terms/UI_Pattern -->
+
+    <owl:Class rdf:about="http://opendesignsystem.org/documents/ods-terms/UI_Pattern">
+        <rdfs:subClassOf rdf:resource="http://opendesignsystem.org/documents/ods-terms/Design_Element_Pattern"/>
+        <rdfs:comment>A pattern is a discernible regularity in the User Interface (UI) design</rdfs:comment>
+        <rdfs:label>UI Pattern</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://opendesignsystem.org/documents/ods-terms/View -->
+
+    <owl:Class rdf:about="http://opendesignsystem.org/documents/ods-terms/View">
+        <rdfs:subClassOf rdf:resource="http://opendesignsystem.org/documents/ods-terms/&apos;Open_Design_System_Framework_Digital_Visual_UI&apos;"/>
+        <rdfs:comment>Smallest entity of the Open Design System Framework</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://opendesignsystem.org/documents/ods-terms/Voice-Tone -->
+
+    <owl:Class rdf:about="http://opendesignsystem.org/documents/ods-terms/Voice-Tone">
+        <rdfs:subClassOf rdf:resource="http://opendesignsystem.org/documents/ods-terms/&apos;Open_Design_System_Framework_Digital_Visual_UI&apos;"/>
+    </owl:Class>
+    
+
+
+    <!-- http://opendesignsystem.org/documents/ods-terms/&apos;Open_Design_System_Framework_Digital_Visual_UI&apos; -->
+
+    <owl:Class rdf:about="http://opendesignsystem.org/documents/ods-terms/&apos;Open_Design_System_Framework_Digital_Visual_UI&apos;">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://opendesignsystem.org/documents/ods-terms/hasPropertyOf"/>
+                <owl:someValuesFrom rdf:resource="http://opendesignsystem.org/documents/ods-terms/Open_Design_System_Framework"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://opendesignsystem.org/documents/ods-terms/&apos;Open_Design_System_Framework_Global&apos;"/>
+        <rdfs:comment>This uses basic bloacks defined in the &quot;Open Design System Framework Global&quot; to create a vocabulary and mapping for the Digital Visual User Interface domian.</rdfs:comment>
+        <rdfs:label>Open Design System Framework Digital Visual UI</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://opendesignsystem.org/documents/ods-terms/&apos;Open_Design_System_Framework_Global&apos; -->
+
+    <owl:Class rdf:about="http://opendesignsystem.org/documents/ods-terms/&apos;Open_Design_System_Framework_Global&apos;">
+        <rdfs:comment>A Framework for Open Design System that provides entities and relationshipmap to build design systems that are semantic and open.</rdfs:comment>
+        <rdfs:label>Open Design System Framework</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://opendesignsystem.org/documents/ods-terms/&apos;Semantic_System&apos; -->
+
+    <owl:Class rdf:about="http://opendesignsystem.org/documents/ods-terms/&apos;Semantic_System&apos;">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://opendesignsystem.org/documents/ods-terms/hasPropertyOf"/>
+                <owl:someValuesFrom rdf:resource="http://opendesignsystem.org/documents/ods-terms/Semantics"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://opendesignsystem.org/documents/ods-terms/Information_System"/>
+        <rdfs:comment>Open System that is a System that is sharable across machines and portable. Applicable to both digital and non-digital domains.</rdfs:comment>
+        <rdfs:label>Semantic System</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://opendesignsystem.org/documents/ods-terms/Appearance"/>
+            <rdf:Description rdf:about="http://opendesignsystem.org/documents/ods-terms/Behaviour"/>
+            <rdf:Description rdf:about="http://opendesignsystem.org/documents/ods-terms/State"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://opendesignsystem.org/documents/ods-terms/Atom"/>
+            <rdf:Description rdf:about="http://opendesignsystem.org/documents/ods-terms/Mixture"/>
+            <rdf:Description rdf:about="http://opendesignsystem.org/documents/ods-terms/Molecular_Isotope"/>
+            <rdf:Description rdf:about="http://opendesignsystem.org/documents/ods-terms/Molecular_Mixture"/>
+            <rdf:Description rdf:about="http://opendesignsystem.org/documents/ods-terms/Molecule"/>
+            <rdf:Description rdf:about="http://opendesignsystem.org/documents/ods-terms/Sub-Atomic_Element"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://opendesignsystem.org/documents/ods-terms/Interactions"/>
+            <rdf:Description rdf:about="http://opendesignsystem.org/documents/ods-terms/Pallette"/>
+            <rdf:Description rdf:about="http://opendesignsystem.org/documents/ods-terms/Placement"/>
+            <rdf:Description rdf:about="http://opendesignsystem.org/documents/ods-terms/Typography"/>
+            <rdf:Description rdf:about="http://opendesignsystem.org/documents/ods-terms/Voice-Tone"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://opendesignsystem.org/documents/ods-terms/Pallette"/>
+            <rdf:Description rdf:about="http://opendesignsystem.org/documents/ods-terms/Typography"/>
+            <rdf:Description rdf:about="http://opendesignsystem.org/documents/ods-terms/Voice-Tone"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

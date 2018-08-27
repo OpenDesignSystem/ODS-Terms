@@ -10,7 +10,7 @@
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="http://opendesignsystem.org/documents/ods-terms/">
         <dc:contributor>Open Design System ontology is supported by members of OpenDesignSystem.org (http://opendesignsystem.org)
-
+Ashish Durgude,
 Murugesan Ganesan</dc:contributor>
         <owl:versionInfo>V 1.0, Release 2018 August 25</owl:versionInfo>
         <dc:license>http://creativecommons.org/licenses/by/3.0/</dc:license>
